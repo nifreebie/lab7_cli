@@ -37,7 +37,7 @@ public class  Sender {
             Response response = (Response) recieveObject();
             return response;
         } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            return null;
         }
 
     }
